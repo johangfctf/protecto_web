@@ -62,6 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .invitado a button:hover {background:#ccc;}
         .error {color:red; text-align:center; margin-bottom:10px;}
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -77,8 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <?php if(!empty($error)) echo "<div class='error'>$error</div>"; ?>
 
-            <input type="email" name="correo" placeholder="Correo electrónico">
-            <input type="password" name="contrasena" placeholder="Contraseña">
+            <input type="email" name="correo" class="form-control" placeholder="Correo electrónico">
+            <input type="password" name="contrasena" class="form-control" placeholder="Contraseña">
 
             <button type="submit" name="accion" value="login">Entrar</button>
 
