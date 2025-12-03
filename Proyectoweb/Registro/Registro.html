@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Farmacia</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .contenedor {
+            display: flex;
+            height: 100vh;
+        }
+
+        .lado-izquierdo {
+            flex: 1;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .lado-derecho {
+            flex: 1;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario {
+            width: 80%;
+            max-width: 350px;
+        }
+
+        .formulario h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .formulario input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .formulario button {
+            width: 100%;
+            padding: 12px;
+            background: #0072ff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .formulario button:hover {
+            background: #005edd;
+        }
+
+        .extra {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .extra a {
+            color: #0072ff;
+            text-decoration: none;
+        }
+
+        #error {
+            display: none;
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="lado-izquierdo">
+        Crear Cuenta
+    </div>
+
+    <div class="lado-derecho">
+        <form class="formulario" action="Registro.php" method="POST" onsubmit="return validar()">
+            <h2>Registro</h2>
+
+            <input type="text" name="nombre" placeholder="Nombre(s)" required>
+            <input type="text" name="apellido" placeholder="Apellido(s)" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+            <input type="password" id="pass1" name="password" placeholder="Contraseña" required>
+            <input type="password" id="pass2" name="confirmar" placeholder="Confirmar contraseña" required>
+
+            <div id="error">Las contraseñas no coinciden</div>
+
+            <button type="submit">Registrarme</button>
+
+            <div class="extra">
+                ¿Ya tienes cuenta?  
+                <a href="../Login/Login.html">Inicia sesión</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+// Validación antes de enviar
+function validar() {
+    let p1 = document.getElementById("pass1").value.trim();
+    let p2 = document.getElementById("pass2").value.trim();
+
+    if (p1.length < 4) {
+        document.getElementById("error").innerText = "La contraseña debe tener mínimo 4 caracteres";
+        document.getElementById("error").style.display = "block";
+        return false;
+    }
+
+    if (p1 !== p2) {
+        document.getElementById("error").innerText = "Las contraseñas no coinciden";
+        document.getElementById("error").style.display = "block";
+        return false;
+    }
+
+    document.getElementById("error").style.display = "none";
+    return true;
+}
+</script>
+
+</body>
+</html>
