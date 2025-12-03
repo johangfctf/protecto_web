@@ -93,7 +93,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="menu">
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="inicio.php">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="inicio2.php">Inicio</a></li>
                 
                 <li class="nav-item"><a class="nav-link" href="Horarios2.php">Horarios</a></li>
                 
