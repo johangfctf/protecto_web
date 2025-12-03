@@ -126,7 +126,7 @@ $es_logueado = isset($_SESSION['correo']);
                 <li class="nav-item"><a class="nav-link active" href="Productos.php">Productos</a></li>
                 <li class="nav-item"><a class="nav-link" href="../Horarios/Horarios.php">Horarios</a></li>
                 <li class="nav-item"><a class="nav-link" href="../Citas/citas.php">Citas</a></li>
-                <li class="nav-item"><a class="nav-link" href="../nosotros.php">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="../nosotros.html">Sobre Nosotros</a></li>
             </ul>
         </div>
 
