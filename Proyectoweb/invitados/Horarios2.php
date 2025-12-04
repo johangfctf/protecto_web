@@ -88,13 +88,11 @@ session_start();
 
         <div class="collapse navbar-collapse justify-content-center" id="menu">
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="inicio2.php">Inicio</a></li>
-                
-                <li class="nav-item"><a class="nav-link active" href="Horarios2.php">Horarios</a></li>
-                
-                <li class="nav-item"><a class="nav-link" href="nosotros2.html">Sobre Nosotros</a></li>
-
-                <li class= "nav-item"><a class="nav-link" href="../Login/Login.php">Iniciar sesion </a>  </li>
+                <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Productos/Productos.php">Productos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Horarios.php">Horarios</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Citas/citas.php">Citas</a></li>
+                <li class="nav-item"><a class="nav-link" href="../nosotros.html">Sobre Nosotros</a></li>
             </ul>
         </div>
 
@@ -117,7 +115,7 @@ session_start();
         <tbody>
             <?php
             // Conexión a la base de datos
-            $conn = new mysqli("localhost", "root", "", "farmacia_web");
+            $conn = new mysqli("localhost", "root", "", "farmaceutica");
             if ($conn->connect_error) {
                 echo "<tr><td colspan='4'>Error de conexión: ".$conn->connect_error."</td></tr>";
             } else {
