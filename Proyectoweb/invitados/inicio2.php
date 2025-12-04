@@ -32,6 +32,11 @@ session_start();
             color: #004db3 !important;
             text-decoration: underline;
         }
+        
+        .nav-link.active {
+            background-color: #0072ff;
+            color: white !important;
+        }
 
         /* Carrusel */
         .carousel-inner img {
@@ -66,6 +71,7 @@ session_start();
             border-radius: 5px;
             text-decoration: none;
             transition: 0.3s;
+            cursor: pointer;
         }
         .btn-comprar:hover {
             background: #005edd;
@@ -94,12 +100,9 @@ session_start();
         <div class="collapse navbar-collapse justify-content-center" id="menu">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="inicio2.php">Inicio</a></li>
-                
                 <li class="nav-item"><a class="nav-link" href="Horarios2.php">Horarios</a></li>
-                
                 <li class="nav-item"><a class="nav-link" href="nosotros2.html">Sobre Nosotros</a></li>
-                 
-                <li class= "nav-item"><a class="nav-link" href="../Login/Login.php">Iniciar sesion </a>  </li>
+                <li class="nav-item"><a class="nav-link" href="../Login/Login.php">Iniciar Sesión</a></li>
             </ul>
         </div>
     </div>
@@ -137,7 +140,8 @@ session_start();
                     <img src="<?= $p['img'] ?>" class="img-fluid mb-2">
                     <h5><?= $p['nombre'] ?></h5>
                     <p><?= $p['desc'] ?></p>
-                    <a class="btn-comprar" href="Productos/Productos.php">Comprar</a>
+                    <!-- ALERTA EN LUGAR DE IR A PRODUCTOS -->
+                    <a class="btn-comprar" href="javascript:void(0);" onclick="alert('Debes iniciar sesión para comprar.')">Comprar</a>
                 </div>
             </div>
         <?php endforeach; ?>

@@ -88,11 +88,11 @@ session_start();
 
         <div class="collapse navbar-collapse justify-content-center" id="menu">
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="inicio2.php">Inicio</a></li>
                
                 <li class="nav-item"><a class="nav-link active" href="Horarios.php">Horarios</a></li>
                 
-                <li class="nav-item"><a class="nav-link" href="../nosotros.html">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros2.html">Sobre Nosotros</a></li>
   <li class="nav-item"><a class="nav-link" href="../Login/Login.php">iniciar sesion</a></li>
 
             </ul>

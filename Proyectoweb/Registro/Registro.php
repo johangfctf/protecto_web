@@ -1,6 +1,6 @@
 <?php
 // CONEXIÓN A LA BASE DE DATOS (MYSQL - XAMPP)
-$conexion = new mysqli("localhost", "root", "", "farmacia_web");
+$conexion = new mysqli("localhost", "root", "", "farmaceutica");
 
 // VERIFICAR CONEXIÓN
 if ($conexion->connect_error) {
