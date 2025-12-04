@@ -115,7 +115,7 @@ session_start();
         <tbody>
             <?php
             // Conexión a la base de datos
-            $conn = new mysqli("localhost", "root", "", "farmacia_web");
+            $conn = new mysqli("localhost", "root", "", "farmaceutica");
             if ($conn->connect_error) {
                 echo "<tr><td colspan='4'>Error de conexión: ".$conn->connect_error."</td></tr>";
             } else {
