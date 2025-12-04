@@ -63,6 +63,9 @@ $carrito = $_SESSION['carrito'] ?? [];
             <button type="submit" class="btn btn-success">Pagar</button>
         </form>
 
+        <!-- BOTÓN NUEVO: Finalizar Compra -->
+        <a href="finalizar_compra.php" class="btn btn-primary w-100 mt-2">Finalizar Compra</a>
+
         <a href="../Productos/productos.php" class="btn btn-secondary mt-3">Seguir comprando</a>
 
     <?php else: ?>
