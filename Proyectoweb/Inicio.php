@@ -32,6 +32,11 @@ session_start();
             color: #004db3 !important;
             text-decoration: underline;
         }
+        
+        .nav-link.active {
+            background-color: #0072ff;
+            color: white !important;
+        }
 
         /* Carrusel */
         .carousel-inner img {
