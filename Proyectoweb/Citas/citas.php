@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "farmacia_web");
+$conexion = new mysqli("localhost", "root", "", "farmaceutica");
 session_start();
 ?>
 

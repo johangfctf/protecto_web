@@ -2,7 +2,7 @@
 session_start(); // Necesario para obtener id_usuario
 
 // Conexión a la base de datos
-$conexion = new mysqli("localhost", "root", "", "farmacia_web");
+$conexion = new mysqli("localhost", "root", "", "farmaceutica");
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }

@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$conn = new mysqli("localhost", "root", "", "farmacia_web");
+$conn = new mysqli("localhost", "root", "", "farmaceutica");
 
 if ($conn->connect_error) {
     die("<tr><td colspan='4'>Error de conexión: ".$conn->connect_error."</td></tr>");

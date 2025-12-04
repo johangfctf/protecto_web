@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "farmacia_web");
+$conexion = new mysqli("localhost", "root", "", "farmaceutica");
 
 $sql = "SELECT h.id_horario, h.horario_entrada, h.horario_salida,
                d.id_doctor, d.nombre_doctor, d.apellido_doctor

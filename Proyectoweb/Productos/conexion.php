@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$bd   = "farmacia_web";
+$bd   = "farmaceutica";
 
 $conn = new mysqli($host, $user, $pass, $bd);
 
